@@ -520,6 +520,12 @@ footer {
   margin-right: 30px;
 }
 
+.portfolio-examples:hover,
+.portfolio-examples:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .first-portf-line,
 .second-portf-line,
 .third-portf-line {
@@ -598,18 +604,29 @@ footer {
   margin-right: 10px;
 }
 
-/* .advantages-items::before {
+.advantages-items::before {
   content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--team-bcg);
-  background-image: url("../img/sprite.svg#icon-antenna-1");
-  background-size: contain;
+
   background-repeat: no-repeat;
   background-position: center;
-} */
+}
+.icon-antenna::before {
+  background-image: url("../img/antenna.svg");
+}
+.icon-clock::before {
+  background-image: url("../img/clock.svg");
+}
+.icon-daigram::before {
+  background-image: url("../img/diagram.svg");
+}
+.icon-astronaut::before {
+  background-image: url("../img/astronaut.svg");
+}
 
 /* ============================================= END ICONS ======================================================== */
 
