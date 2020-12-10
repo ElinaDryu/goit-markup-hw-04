@@ -14,7 +14,6 @@
   --portfolio-bcg-btn-color: #f5f4fa;
   --portfolio-bcg-cards-color: #eeeeee;
   --line-header: #ececec;
-  --icons-color: ##afb1b8;
 }
 
 body {
@@ -124,16 +123,24 @@ header {
   margin-right: 50px;
 }
 
-/* .nav-contacts-item::before {
-  content: "";
-  width: 16px;
-  height: 12px;
+.mail-icon-link {
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../img/sprite.svg#icon-envelope");
+
   background-size: contain;
-  padding: 2px 0px;
-} */
+}
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--main-color-grey);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--accent-color-blue);
+}
 
 .logo {
   font-family: var(--secondary-font);
@@ -156,10 +163,7 @@ header {
   letter-spacing: 0.02em;
   font-weight: 500;
 }
-.site-nav-link:hover,
-.site-nav-link:focus {
-  color: var(--accent-color-blue);
-}
+
 .contacts {
   font-style: normal;
 }
@@ -170,10 +174,21 @@ header {
   letter-spacing: 0.02em;
   font-weight: 500;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.site-nav-contacts:hover .mail-icon,
+.site-nav-contacts:focus .mail-icon {
+  fill: var(--accent-color-blue);
 }
 .site-nav-contacts:hover,
 .site-nav-contacts:focus {
   color: var(--accent-color-blue);
+}
+
+.tel {
+  width: 10px;
+  height: 16px;
 }
 
 /* ========== END HEADER ========== */
@@ -583,4 +598,91 @@ footer {
   margin-right: 10px;
 }
 
+/* .advantages-items::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--team-bcg);
+  background-image: url("../img/sprite.svg#icon-antenna-1");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
 /* ============================================= END ICONS ======================================================== */
+
+/* ============================================= CLIENTS ======================================================== */
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-black);
+  margin-bottom: 50px;
+}
+
+.clients-links {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-container {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: solid 1px rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.clients-container:not(:last-child) {
+  margin-right: 30px;
+}
+
+.logo-1 {
+  width: 44.27px;
+  height: 49.23px;
+  fill: var(--color1, #afb1b8);
+}
+
+.logo-2 {
+  width: 40px;
+  height: 52px;
+  fill: var(--color1, #afb1b8);
+}
+.logo-3 {
+  width: 41px;
+  height: 42.6px;
+  fill: var(--color1, #afb1b8);
+}
+.logo-4 {
+  width: 79.66px;
+  height: 42.02px;
+  fill: var(--color1, #afb1b8);
+}
+.logo-5 {
+  width: 59px;
+  height: 47px;
+  fill: var(--color1, #afb1b8);
+}
+.logo-6 {
+  width: 88.48px;
+  height: 45.44px;
+  fill: var(--color1, #afb1b8);
+}
+
+.clients-container:hover,
+.clients-container:focus {
+  border-color: var(--accent-color-blue);
+}
+
+.clients-container:hover .clients-list-icon,
+.clients-container:focus .clients-list-icon {
+  fill: var(--accent-color-blue);
+}
+
+/* ============================================= END CLIENTS ======================================================== */
